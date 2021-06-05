@@ -38,6 +38,7 @@ jobs:
          continue-on-error: true
          run: |
            cd bot
+           pip3 install pyhton-dotenv pyrogram==1.2.8 tgcrypto
            expect -c "
            python3 tools/genStrSession.py
            expect \"API\"
