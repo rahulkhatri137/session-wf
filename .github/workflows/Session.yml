@@ -43,5 +43,5 @@ jobs:
            expect \"API\"
            send \"${{ secrets.API }}\r\"
            expect \"Hash\"
-           send \"${{ secrest.HASH }}\r\"
+           send \"${{ secrets.HASH }}\r\"
            interact"
