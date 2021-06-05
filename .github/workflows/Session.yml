@@ -38,7 +38,7 @@ jobs:
          continue-on-error: true
          run: |
            cd bot
-           pip3 install tgcrypto
+           pip3 install tgcrypto pyrogram
            expect -c "
            python3 tools/genStrSession.py
            expect \"API\"
