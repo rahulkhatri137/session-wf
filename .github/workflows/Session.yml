@@ -38,10 +38,10 @@ jobs:
          continue-on-error: true
          run: |
            cd bot
-           expect -c"
+           expect -c "
            python3 tools/genStrSession.py
            expect \"API\"
-           send ${{ secrets.API }}
+           send \"${{ secrets.API }}\r\"
            expect \"Hash\"
-           send ${{ secrest.HASH }}
+           send \"${{ secrest.HASH }}\r\"
            interact"
